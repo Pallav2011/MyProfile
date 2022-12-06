@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration</title>
+    <style>
+      label {
+        color: teal;
+      }
+      input [type="text"] {
+       border-radius: 10px;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Student Registration form</h3>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td><label>first Name</label></td>
+            <td>
+              <input
+                type="text"
+                required
+                autofocus
+                placeholder="only capital letters"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Middle Name</label></td>
+            <td><input type="text" placeholder="optional feild" /></td>
+          </tr>
+          <tr>
+            <td><label>Last Name</label></td>
+            <td>
+              <input type="text" required placeholder="only capital letter" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Mobile No</label></td>
+            <td><input type="number" placeholder="max 10 dogits" /></td>
+          </tr>
+          <tr>
+            <td><label>Email</label></td>
+            <td><input type="email" placeholder="abc@gmail.com" /></td>
+          </tr>
+          <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td><label>Date of Birth</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label>in weak</label></td>
+            <td><input type="week" /></td>
+          </tr>
+          <tr>
+            <td><label>in time</label></td>
+            <td><input type="time" /></td>
+          </tr>
+          <tr>
+            <td><label>upload profile photo</label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+          <tr>
+            <td><label>Address</label></td>
+            <td><textarea rows="3"></textarea></td>
+          </tr>
+
+          <tr>
+            <td><label>state</label></td>
+            <td><input type="text" placeholder="maharashtra" readonly /></td>
+          </tr>
+          <tr>
+            <td><label>country</label></td>
+            <td><input type="text" placeholder="India" disabled /></td>
+          </tr>
+          <tr>
+            <td><input type="submit" /></td>
+            <td><input type="reset" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
