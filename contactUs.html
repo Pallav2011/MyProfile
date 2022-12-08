@@ -11,9 +11,25 @@
     <style>
       body {
         font-family: "Josefin Sans", sans-serif;
+        color: blueviolet;
       }
+      input[type="text"],[type="number"],[type="email"],textarea,[type="submit"],[type="reset"] {
+        color: brown;
+        background-color: transparent;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        height: 25px;
+      }
+      input:hover {
+        background-color: blue;
+        color: white;
+      }
+      #txtarea :hover {
+        background-color: blue;
+        color: white;
+      }
+  
     </style>
-    </body>
   </head>
 
   <body>
@@ -24,7 +40,12 @@
           <tr>
             <td><label>Full Name: </label></td>
             <td>
-              <input type="text" placeholder="Enter Full Name here" required autofocus/>
+              <input
+                type="text"
+                placeholder="Enter Full Name here"
+                required
+                autofocus
+              />
             </td>
           </tr>
           <tr>
@@ -39,7 +60,7 @@
           </tr>
           <tr>
             <td><label>Inquiry about:</label></td>
-            <td><textarea rows="5"></textarea></td>
+            <td id="txtarea"><textarea rows="5"></textarea></td>
           </tr>
           <tr>
             <td><input type="submit" /></td>
